@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-number = int(98)  # Explicitly define number as an integer
+number = 98  # Keep number as an integer
 print(f"{number} Battery street")
+
 
