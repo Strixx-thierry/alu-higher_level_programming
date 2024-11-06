@@ -1,56 +1,40 @@
 #!/usr/bin/python3
-"""
-Rectangle 
-"""
+"""Module for the Rectangle class."""
 
 
 class Rectangle:
-    """
-    class rectangle
-    """
+    """Represents a rectangle."""
+    
     def __init__(self, width=0, height=0):
-        """
-        constructor function
-        """
+        """Initialize with width and height."""
         self.height = height
         self.width = width
 
     @property
     def width(self):
-        """
-        getter function for width
-        """
-
+        """Get the rectangle's width."""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """
-         function for width
-         """
+        """Set the rectangle's width."""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
-        else:
-            self.__width = value
+        self.__width = value
 
     @property
     def height(self):
-        """
-        get the  function for height
-        """
-
+        """Get the rectangle's height."""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """
-        the  function for height
-        """
+        """Set the rectangle's height."""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
-        else:
-            self.__height = value
+        self.__height = value
+
