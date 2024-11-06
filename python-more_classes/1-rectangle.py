@@ -5,15 +5,18 @@ Rectangle
 
 
 class Rectangle:
-    """class rectangle"""
+    """
+    class rectangle
+    """
     def __init__(self, width=0, height=0):
-        """constructor function"""
+        """
+        constructor function
+        """
         self.height = height
         self.width = width
 
     @property
     def width(self):
-        
         """
         getter function for width
         """
@@ -22,7 +25,6 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        
         """
          function for width
          """
@@ -35,7 +37,6 @@ class Rectangle:
 
     @property
     def height(self):
-
         """
         get the  function for height
         """
@@ -44,7 +45,6 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-
         """
         the  function for height
         """
