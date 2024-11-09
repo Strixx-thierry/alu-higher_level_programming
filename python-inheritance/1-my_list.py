@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" MyList class."""
+"""1 my list"""
 
 
 class MyList(list):
-    """ list class."""
+    """ list class """
     def print_sorted(self):
-        """Prints the list in ascending order."""
+        """printnig the list in ascending order"""
         print(sorted(self))
