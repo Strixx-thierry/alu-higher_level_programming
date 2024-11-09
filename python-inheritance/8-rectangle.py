@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module defines the Rectangle class, which extends BaseGeometry."""
+""" BaseGeometry class."""
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
@@ -16,4 +16,3 @@ class Rectangle(BaseGeometry):
     def area(self):
         """Calculate and return the rectangle's area."""
         return self.__width * self.__height
-
