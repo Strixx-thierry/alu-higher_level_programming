@@ -3,7 +3,7 @@
 
 
 class MyList(list):
-    """ list class """
+    """  subclass of list with a method  to return filtered list """
     def print_sorted(self):
         """printnig the list in ascending order"""
         print(sorted(self))
