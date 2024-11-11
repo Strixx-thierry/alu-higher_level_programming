@@ -5,4 +5,3 @@ def append_write(filename="", text=""):
     """Function that appends content to a file."""
     with open(filename, "a", encoding="utf-8") as a:
         return a.write(text)
-
