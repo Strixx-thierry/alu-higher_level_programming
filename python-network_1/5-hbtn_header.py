@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" Retrieves and displays the X-Request-Id 
-header from a request to a specified URL."""
+""" Fetches and displays the X-Request-Id header from a
+request to a specified URL. """
 import sys
 import requests
 
@@ -9,3 +9,4 @@ if __name__ == "__main__":
 
     r = requests.get(url)
     print(r.headers.get("X-Request-Id"))
+
