@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A Python script that retrieves the status from https://alu-intranet.hbtn.io."""
+"""script that get the status from https://alu-intranet.hbtn.io."""
 import requests
 
 if __name__ == '__main__':
