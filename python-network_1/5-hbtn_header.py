@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Retrieves and displays the X-Request-Id 
-header from a request to a specified URL. """
+header from a request to a specified URL."""
 import sys
 import requests
 
