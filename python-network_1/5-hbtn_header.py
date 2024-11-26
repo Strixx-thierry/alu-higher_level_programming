@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Fetches and displays the X-Request-Id header from a request to a specified URL. """
+""" Fetches and displays the X-Request-Id header from a request. """
 import sys
 import requests
 
