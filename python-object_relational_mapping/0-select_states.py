@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-This script connects to the 'hbtn_0e_0_usa'
-database and lists all the states from the 
-'states' table, displaying each state in the result.
+This script connects to the
+'hbtn_0e_0_usa' database and lists all the states
+from the 'states' table, displaying each state in the result.
 """
 import sys
 import MySQLdb
@@ -16,4 +16,4 @@ if __name__ == '__main__':
     states = cur.fetchall()
 
     for state in states:
-        print(state)        
+        print(state)
