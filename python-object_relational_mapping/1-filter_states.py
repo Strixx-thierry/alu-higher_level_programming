@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-"""
-Fetching states and lists all states whose names begin
- with the letter 'N' from the database.
-"""
+"""Fetching array  and lists all states whose names
+begin with the letter 'N' from the database."""
 import sys
 import MySQLdb
 
