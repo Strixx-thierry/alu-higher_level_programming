@@ -1,23 +1,22 @@
 #!/usr/bin/python3
-"""displaying all the states  """
-import MySQLdb
+""" displays all the cities"""
 import sys
+import MySQLdb
 
 if __name__ == "__main__":
-    """start the connection to the database"""
-    db = MySQLdb.connect(
-            host="localhost",
-            user=sys.argv[1],
-            passwd=sys.argv[2],
-            db=sys.argv[3],
-            port=3306
+    """ starting with the connection"""
+    with MySQLdb.connect(
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        db=sys.argv[3],
+        host='localhost',
+        port=3306
+    )as s:
+        cur = s.cursor()
+        cur.execute(
+                "SELECT * FROM states ORDER BY id ASC"
             )
-
-    cr = db.cursor()
-    cr.execute("""SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER 
-               BY states.id""")
-    tables = cr.fetchall()
-    for i in tables:
-        print(i)
-    cr.close()
-    db.close()
+        all_states = cur.fetchall()
+        for each_state in all_states:
+            print(each_state)
+        cur.close()
