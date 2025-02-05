@@ -1,13 +1,17 @@
 #!/usr/bin/node
 
-const writeFile = () => {
-  const fileName = process.argv[2];
-  const word = process.argv[3];
+const readFile = () => {
+  const args = process.argv;
+  const arg = args[2];
 
   const fs = require('fs');
 
-  fs.writeFile(fileName, word, (err) => {
-    if (err) throw err;
+  fs.readFile(arg, 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log(data);
   });
 };
-writeFile();
+readFile();
